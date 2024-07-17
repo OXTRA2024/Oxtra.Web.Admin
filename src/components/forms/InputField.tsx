@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import AppIcon from "@/components/AppIcon";
 import clsx from "clsx";
 
 interface InputFieldProps {
   label?: string;
-  name: string;
+  name?: string;
   placeholder?: string;
   icon?: React.ReactNode;
   type?: "text" | "email" | "password" | "checkbox" | "radio" | "search";
@@ -37,7 +36,10 @@ const InputField: React.FC<InputFieldProps> = ({
     <div className={`w-full flex items-center relative ${maxW} `}>
       {type === "search" && (
         <span className="absolute z-10 left-3">
-          <AppIcon icon="ri:search-line" className="text-xl text-gray-400" />
+          <img
+            src="/assets/search.svg"
+            className="w-[15px] h-[15px] object-contain"
+          />
         </span>
       )}
       {label && !isCheckbox && !isRadio && (
@@ -71,11 +73,11 @@ const InputField: React.FC<InputFieldProps> = ({
           >
             {type === "password" ? (
               <button type="button" onClick={togglePasswordVisibility}>
-                {isPasswordVisible ? (
+                {/* {isPasswordVisible ? (
                   <AppIcon icon="jam:padlock-alt-open" />
                 ) : (
                   <AppIcon icon="jam:padlock-alt-close" />
-                )}
+                )} */}
               </button>
             ) : (
               icon

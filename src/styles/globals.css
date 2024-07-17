@@ -58,3 +58,59 @@ body {
 .apexcharts-svg {
   background: transparent !important;
 }
+
+.hovered_image {
+  display: none;
+}
+
+.parent_nav:hover .child_nav {
+  color: #086375;
+  border-color: #086375;
+}
+
+.parent_nav:hover .hovered_image {
+  display: flex;
+}
+
+.parent_nav:hover .initial_image {
+  display: none;
+}
+
+/* Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Firefox */
+/* For Firefox 64+ */
+* {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+/* For Firefox 63 and below */
+* {
+  scrollbar-color: transparent transparent;
+}
+
+/* Microsoft Edge and IE */
+* {
+  -ms-overflow-style: none;
+  /* Hide the scrollbar in IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
