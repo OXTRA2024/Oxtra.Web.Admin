@@ -13,16 +13,7 @@ const config: Config = {
       center: true,
     },
     extend: {
-      fontFamily: {
-        gordita: ["Gordita Regular"],
-        "gordita-regular": ["Gordita Regular"],
-        "gordita-thin": ["Gordita Thin"],
-        "gordita-light": ["Gordita Light"],
-        "gordita-medium": ["Gordita Medium"],
-        "gordita-bold": ["Gordita Bold"],
-        "gordita-black": ["Gordita Black"],
-        "gordita-ultra": ["Gordita Ultra"],
-      },
+
       colors: {
         primary: "#485FE6",
         dark: "#191A15",

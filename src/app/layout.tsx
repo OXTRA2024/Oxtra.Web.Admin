@@ -1,8 +1,10 @@
-import SideBar from "@/components/dashboard/layouts/SideBar";
-import TopBar from "@/components/dashboard/layouts/TopBar";
+import SideBar from "../layout/SideBar";
+import TopBar from "../layout/TopBar";
 import Loading from "@/constants/loading";
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import "../styles/globals.css";
+import "../styles/fonts.css"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -27,8 +29,8 @@ export default function RootLayout({
             </aside>
             <main className="ml-[240px] flex-1 flex flex-col h-screen overflow-y-auto overflow-x-hidden">
               <TopBar />
-              <div className="px-[30px]">
-                <div className="bg-[#F4F6F8]">{children}</div>
+              <div className="">
+                <div className="bg-[#F4F6F8] min-h-[75vh] px-[30px]">{children}</div>
               </div>
             </main>
           </section>
