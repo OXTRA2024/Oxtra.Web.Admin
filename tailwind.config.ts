@@ -6,13 +6,23 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-     "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js"
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js"
   ],
   theme: {
     container: {
       center: true,
     },
     extend: {
+      fontFamily: {
+        gordita: ["Gordita Regular"],
+        "gordita-regular": ["Gordita Regular"],
+        "gordita-thin": ["Gordita Thin"],
+        "gordita-light": ["Gordita Light"],
+        "gordita-medium": ["Gordita Medium"],
+        "gordita-bold": ["Gordita Bold"],
+        "gordita-black": ["Gordita Black"],
+        "gordita-ultra": ["Gordita Ultra"],
+      },
       colors: {
         primary: "#485FE6",
         dark: "#191A15",
