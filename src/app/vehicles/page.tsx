@@ -19,8 +19,20 @@ const page = () => {
         ))}
       </div>
 
-      <div className="my-[20px]">
-        <InputField className="w-[4000px]" />
+      <div className="my-[20px] flex items-center justify-between">
+        <div className="bg-[#F4F6F8] border border-[#E4E6E8] h-[40px] w-[400px] rounded-[5px] text-[#343638] text-[12px] pr-[12px] flex gap-[10px] items-center">
+          <input
+            placeholder="search by name, email or phone number"
+            className="py-[12px] bg-transparent h-[40px] rounded-[5px] px-[12px] w-full text-[12px]"
+          />
+
+          <div>
+            <img
+              src="/assets/search.svg"
+              className="w-[15px] h-[15px] object-contain"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

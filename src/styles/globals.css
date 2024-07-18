@@ -114,3 +114,10 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}

@@ -33,7 +33,7 @@ const InputField: React.FC<InputFieldProps> = ({
   const merged = clsx("input", className, type === "search" ? "!pl-8" : "");
 
   return (
-    <div className={`w-full flex items-center relative ${maxW} `}>
+    <div className={`w-full flex items-center relative ${maxW}`}>
       {type === "search" && (
         <span className="absolute z-10 left-3">
           <img
@@ -63,6 +63,7 @@ const InputField: React.FC<InputFieldProps> = ({
             className={merged}
             placeholder={placeholder}
             type={type === "password" && isPasswordVisible ? "text" : type}
+            style={{ width: "100%" }} // Apply inline style for debugging
           />
         )}
         {icon && (
